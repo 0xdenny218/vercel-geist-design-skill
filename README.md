@@ -26,37 +26,43 @@ The bundled reference files summarize stable design rules and token values for l
 Recommended install path:
 
 ```sh
-npx skills@1.5.13 add 0xdenny218/vercel-geist-design-skill --skill vercel-geist-design
+npx skills@latest add 0xdenny218/vercel-geist-design-skill --skill vercel-geist-design
 ```
 
 Install globally for Codex:
 
 ```sh
-npx skills@1.5.13 add 0xdenny218/vercel-geist-design-skill --skill vercel-geist-design --agent codex --global
+npx skills@latest add 0xdenny218/vercel-geist-design-skill --skill vercel-geist-design --agent codex --global
 ```
 
 Install globally for Claude Code:
 
 ```sh
-npx skills@1.5.13 add 0xdenny218/vercel-geist-design-skill --skill vercel-geist-design --agent claude-code --global
+npx skills@latest add 0xdenny218/vercel-geist-design-skill --skill vercel-geist-design --agent claude-code --global
 ```
 
 Install for both Codex and Claude Code:
 
 ```sh
-npx skills@1.5.13 add 0xdenny218/vercel-geist-design-skill --skill vercel-geist-design --agent codex --agent claude-code --global
+npx skills@latest add 0xdenny218/vercel-geist-design-skill --skill vercel-geist-design --agent codex --agent claude-code --global
 ```
 
 Preview the available skill without installing:
 
 ```sh
-npx skills@1.5.13 add 0xdenny218/vercel-geist-design-skill --list
+npx skills@latest add 0xdenny218/vercel-geist-design-skill --list
 ```
 
 You can also use the skill without installing it:
 
 ```sh
-npx skills@1.5.13 use 0xdenny218/vercel-geist-design-skill --skill vercel-geist-design
+npx skills@latest use 0xdenny218/vercel-geist-design-skill --skill vercel-geist-design
+```
+
+If a future `skills` CLI release changes behavior, pin to the verified version:
+
+```sh
+npx skills@1.5.13 add 0xdenny218/vercel-geist-design-skill --skill vercel-geist-design
 ```
 
 ### Codex
