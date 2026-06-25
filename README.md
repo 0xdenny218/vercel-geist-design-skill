@@ -21,9 +21,47 @@ The bundled reference files summarize stable design rules and token values for l
 
 ## Install
 
+### npx skills
+
+Recommended install path:
+
+```sh
+npx skills@1.5.13 add 0xdenny218/vercel-geist-design-skill --skill vercel-geist-design
+```
+
+Install globally for Codex:
+
+```sh
+npx skills@1.5.13 add 0xdenny218/vercel-geist-design-skill --skill vercel-geist-design --agent codex --global
+```
+
+Install globally for Claude Code:
+
+```sh
+npx skills@1.5.13 add 0xdenny218/vercel-geist-design-skill --skill vercel-geist-design --agent claude-code --global
+```
+
+Install for both Codex and Claude Code:
+
+```sh
+npx skills@1.5.13 add 0xdenny218/vercel-geist-design-skill --skill vercel-geist-design --agent codex --agent claude-code --global
+```
+
+Preview the available skill without installing:
+
+```sh
+npx skills@1.5.13 add 0xdenny218/vercel-geist-design-skill --list
+```
+
+You can also use the skill without installing it:
+
+```sh
+npx skills@1.5.13 use 0xdenny218/vercel-geist-design-skill --skill vercel-geist-design
+```
+
 ### Codex
 
-Copy the skill folder into your Codex skills directory:
+Manual fallback:
 
 ```sh
 cp -R skills/vercel-geist-design ~/.codex/skills/
@@ -37,7 +75,13 @@ Use $vercel-geist-design to redesign this dashboard in a clean Vercel-style UI.
 
 ### Claude / Claude Code
 
-Use the `skills/vercel-geist-design` folder as the skill package. Depending on your Claude surface, either upload that folder as a skill package or copy it into the skills location supported by your Claude/Claude Code setup.
+Manual fallback for Claude Code:
+
+```sh
+cp -R skills/vercel-geist-design ~/.claude/skills/
+```
+
+For Claude surfaces that support uploaded skills, use the `skills/vercel-geist-design` folder as the skill package.
 
 Invoke it with:
 
@@ -45,9 +89,9 @@ Invoke it with:
 Use $vercel-geist-design to review this UI for Vercel/Geist design consistency.
 ```
 
-### npx skills
+### Repository Layout
 
-This repository follows the common skills repository layout:
+This repository follows the common `skills` repository layout:
 
 ```text
 skills/
@@ -59,16 +103,13 @@ skills.sh.json
 package.json
 ```
 
-If your `skills` CLI supports GitHub/repository installs, point it at this repository and select `vercel-geist-design`.
-
 Local validation can be run with:
 
 ```sh
-npm install
 npm run validate
 ```
 
-The validation script uses the public `skills` npm package. Review third-party packages before executing them.
+The validation script is local and has no package dependencies.
 
 ## Positioning
 
@@ -85,4 +126,3 @@ This repository intentionally takes a lighter approach:
 ## License
 
 MIT. Vercel and Geist are trademarks or design assets of their respective owners. This repository does not grant permission to copy Vercel product screens, private assets, logos, or trademarks.
-
