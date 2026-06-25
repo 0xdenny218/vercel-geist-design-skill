@@ -9,6 +9,7 @@ Use this before claiming that a Vercel/Geist-styled UI is complete.
 - Text hierarchy uses gray scale before color.
 - Components use tokenized colors, spacing, radius, and type instead of one-off values.
 - Light and Dark themes use the same token names when both are supported.
+- The original business domain remains intact; Geist changed the visual system, not the product category.
 
 ## Layout
 
@@ -57,4 +58,4 @@ Use this before claiming that a Vercel/Geist-styled UI is complete.
 - Cards are nested inside cards.
 - Focus outlines were removed without replacement.
 - The UI looks like a landing page when the task is a product tool.
-
+- A non-developer business was accidentally turned into a deployment/project/repository dashboard.

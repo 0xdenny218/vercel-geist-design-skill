@@ -16,8 +16,9 @@ Use this skill for web UI, dashboards, admin surfaces, docs/product pages, and d
 1. Inspect the existing app before changing visuals. Preserve established component APIs, routing, state management, and design-system patterns when they exist.
 2. Decide whether the target should use Light, Dark, or themeable tokens.
 3. Prefer project-local tokens if present. If none exist, introduce CSS variables, Tailwind theme values, or a small token module before scattering raw colors and sizes.
-4. Build the real functional surface first. Avoid landing-page filler unless the user explicitly asks for marketing content.
-5. Verify responsive layout, text fit, focus states, hover/active/disabled states, and contrast.
+4. Preserve the user's business domain and nouns. Apply Geist as visual language only; do not turn non-developer products into deployment platforms, project dashboards, repositories, commits, or Vercel-like business concepts unless the user asks for that domain.
+5. Build the real functional surface first. Avoid landing-page filler unless the user explicitly asks for marketing content.
+6. Verify responsive layout, text fit, focus states, hover/active/disabled states, and contrast.
 
 ## Geist Principles
 
@@ -67,4 +68,5 @@ Load these only when needed:
 - Custom font sizes, line heights, and colors when a token should be used.
 - Removing outlines without a visible replacement.
 - Marketing-style hero composition for tools, dashboards, and admin surfaces.
+- Replacing the user's original business domain with Vercel/deployment terminology.
 - Long looping animations or motion that does not explain a state change.
