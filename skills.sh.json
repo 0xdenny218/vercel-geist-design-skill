@@ -1,0 +1,13 @@
+{
+  "notGrouped": "bottom",
+  "groupings": [
+    {
+      "title": "Design Systems",
+      "description": "Lightweight community skills for applying public design-system guidance to agent-generated interfaces.",
+      "skills": [
+        "vercel-geist-design"
+      ]
+    }
+  ]
+}
+

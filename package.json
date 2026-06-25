@@ -1,0 +1,20 @@
+{
+  "name": "vercel-geist-design-skill",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A lightweight Agent Skill for applying Vercel's Geist design language to frontend UI work.",
+  "license": "MIT",
+  "keywords": [
+    "agent-skill",
+    "codex-skill",
+    "claude-skill",
+    "vercel",
+    "geist",
+    "design-system",
+    "frontend",
+    "nextjs"
+  ],
+  "scripts": {
+    "validate": "node scripts/validate.mjs"
+  }
+}
