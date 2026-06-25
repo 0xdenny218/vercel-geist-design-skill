@@ -40,8 +40,19 @@ const frontmatterEnd = skill.indexOf("\n---\n", 4);
 assert(frontmatterEnd > 0, "SKILL.md must close YAML frontmatter");
 
 const frontmatter = skill.slice(4, frontmatterEnd);
-assert(/^name: vercel-geist-design$/m.test(frontmatter), "SKILL.md must declare the skill name");
-assert(/^description: .{80,}$/m.test(frontmatter), "SKILL.md description must be descriptive");
+assert(/^name: ["']?vercel-geist-design["']?$/m.test(frontmatter), "SKILL.md must declare the skill name");
+
+const descriptionLine = frontmatter
+  .split("\n")
+  .find((line) => line.startsWith("description: "));
+assert(descriptionLine, "SKILL.md must declare a description");
+
+const descriptionValue = descriptionLine.slice("description: ".length);
+assert(descriptionValue.length >= 80, "SKILL.md description must be descriptive");
+assert(
+  /^".*"$/.test(descriptionValue) || /^'.*'$/.test(descriptionValue) || !descriptionValue.includes(": "),
+  "SKILL.md description must be quoted when it contains colon-space",
+);
 
 const openai = read(join(skillRoot, "agents", "openai.yaml"));
 assert(openai.includes('display_name: "Vercel Geist Design"'), "openai.yaml missing display_name");

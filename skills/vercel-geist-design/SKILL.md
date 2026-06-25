@@ -1,6 +1,6 @@
 ---
-name: vercel-geist-design
-description: Apply Vercel's Geist design system to frontend and app UI work. Use when designing, building, refactoring, or reviewing web apps, Next.js pages, dashboards, developer tools, docs sites, product surfaces, and agent-generated UI that should feel Vercel-like: minimal, high-contrast, restrained, token-driven, accessible, and developer-focused.
+name: "vercel-geist-design"
+description: "Apply Vercel's Geist design system to frontend and app UI work. Use when designing, building, refactoring, or reviewing web apps, Next.js pages, dashboards, developer tools, docs sites, product surfaces, and agent-generated UI that should feel Vercel-like: minimal, high-contrast, restrained, token-driven, accessible, and developer-focused."
 ---
 
 # Vercel Geist Design
@@ -68,4 +68,3 @@ Load these only when needed:
 - Removing outlines without a visible replacement.
 - Marketing-style hero composition for tools, dashboards, and admin surfaces.
 - Long looping animations or motion that does not explain a state change.
-
